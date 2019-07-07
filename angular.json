@@ -115,6 +115,41 @@
           }
         }
       }
+    },
+    "ng-semantic": {
+      "projectType": "library",
+      "root": "projects/ng-semantic",
+      "sourceRoot": "projects/ng-semantic/src",
+      "prefix": "ui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-semantic/tsconfig.lib.json",
+            "project": "projects/ng-semantic/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-semantic/src/test.ts",
+            "tsConfig": "projects/ng-semantic/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-semantic/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-semantic/tsconfig.lib.json",
+              "projects/ng-semantic/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng-semantic-workspace"
 }
