@@ -5,3 +5,5 @@
 export * from './lib/ng-semantic.service';
 export * from './lib/ng-semantic.component';
 export * from './lib/ng-semantic.module';
+
+export * from './lib/button/button.component';

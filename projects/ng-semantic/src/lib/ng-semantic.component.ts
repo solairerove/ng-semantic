@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ui-ng-semantic',
   template: `
     <p>
-      <button class="ui button">Follow</button>
+      ui-ng-semantic
     </p>
   `,
   styles: []
